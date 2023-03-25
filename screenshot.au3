@@ -3,7 +3,7 @@ Global $quality = 80 				;JPG Quality. 1-100.
 Global $seconds = 10 				;how many seconds between each screenshot
 Global $folderName = "Project1" 	;folder on desktop screenshots will be saved to. Must exist, script will not create it.
 Global $tooltipEnable = True		;whether status tooltip will be shown or not. True/False
-Global $programToActivate = "Adobe Photoshop"	;title of the window that must be active to take a screenshot
+Global $programToActivate = "Adobe Photoshop"	;title of the window that must be active to take a screenshot. Leave blank to always be true
 ;##### USER CONFIG #####
 
 #include <ScreenCapture.au3>
