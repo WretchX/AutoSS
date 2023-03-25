@@ -13,6 +13,7 @@ _ScreenCapture_SetJPGQuality ($quality)
 Global $num = 1
 Global $tipRunning = "SS Running"
 Init()
+If $quality > 100 Or $quality < 1 Then Exit 16
 AdlibRegister("SS", $seconds*1000)
 
 While 1
@@ -37,7 +38,7 @@ Func SS()
 	Else
 		MsgBox(16, "Error", "Specified folder .\Desktop\" & $folderName & " does not exist." & _
 		@CRLF & "Create this folder or change the folder name, then run this program again.")
-		Exit 2
+		Exit 41
 	EndIf
 EndFunc
 
