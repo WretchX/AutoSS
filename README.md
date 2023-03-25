@@ -4,11 +4,11 @@
 Top few lines of the source code
 
 ## `Global $quality = 80`
-The quality of the JPG screenshot. **1-100**
+The quality of the JPG screenshot. **Integer 1-100**
 
 
 ## `Global $seconds = 10`
-How many seconds between each screenshot. **Any integer**
+How many seconds between each screenshot. **Integer**
 
 
 ## `Global $folderName = "Project1"`
