@@ -3,6 +3,7 @@ Global $quality = 80 				;JPG Quality. 1-100.
 Global $seconds = 10 				;how many seconds between each screenshot
 Global $folderName = "Project1" 	;folder on desktop screenshots will be saved to. Must exist, script will not create it.
 Global $tooltipEnable = True		;whether status tooltip will be shown or not. True/False
+Global $programToActivate = "Adobe Photoshop"	;title of the window that must be active to take a screenshot
 ;##### USER CONFIG #####
 
 #include <ScreenCapture.au3>
@@ -27,7 +28,7 @@ Func Init()
 EndFunc
 
 Func SS()
-	If WinActive("Adobe Photoshop") <> 0 And FileExists(@DesktopDir & "\" & $FolderName) Then
+	If WinActive($programToActivate) <> 0 And FileExists(@DesktopDir & "\" & $FolderName) Then
 		If $tooltipEnable = True Then ToolTip("SS ACTIVE", 0, 0)
 		Local $hBmp
 		$hBmp = _ScreenCapture_Capture("")
