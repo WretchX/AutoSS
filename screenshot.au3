@@ -17,7 +17,7 @@ AdlibRegister("SS", $seconds*1000)
 
 While 1
 	sleep(100)
-	If WinActive("Adobe Photoshop") == 0 Then ToolTip($tipRunning, 0, 0)
+	If WinActive($programToActivate) == 0 Then ToolTip($tipRunning, 0, 0)
 	If FileExists(@DesktopDir & "\" & $FolderName & "\SS" & $num & ".jpg") Then $num += 1
 WEnd
 
