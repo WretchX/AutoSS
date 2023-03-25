@@ -20,4 +20,4 @@ Whether status tooltip will be shown or not. **True/False**
 
 
 ## `Global $programToActivate = "Adobe Photoshop"`
-Title of the window that must be active to take a screenshot. Leave blank ("") to always be true. **String**
+Title of the window that must be active to take a screenshot. Leave blank ("") to always be true. Can be substring. **String**
