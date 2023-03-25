@@ -1,4 +1,4 @@
-## This takes a screenshot every X amount of seconds and puts it in a folder on your desktop. Requires AutoIt installation.
+### This takes a screenshot every X amount of seconds and puts it in a folder on your desktop. Requires AutoIt installation.
 # User Config
 
 ## Global $quality = 80
@@ -12,5 +12,5 @@ Folder on desktop screenshots will be saved to. The script will not create this 
 
 ## Global $tooltipEnable = True		;whether status tooltip will be shown or not. True/False
 
-##Global $programToActivate = "Adobe Photoshop"	
+## Global $programToActivate = "Adobe Photoshop"	
 Title of the window that must be active to take a screenshot. Leave blank ("") to always be true.
