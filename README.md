@@ -20,5 +20,5 @@ Whether status tooltip will be shown or not. **True/False**
 
 
 ## `Global $programToActivate = "Adobe Photoshop"`
-Title of the window that must be active to take a screenshot. Leave blank ("") to always be true. Can be substring. **String**
+Title of the window that must be active to take a screenshot. Leave blank ("") to always be true. Can be substring. **String**  
 Can be window handle or class (see https://www.autoitscript.com/autoit3/docs/intro/windowsadvanced.htm)
